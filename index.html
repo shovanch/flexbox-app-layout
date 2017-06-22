@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=stylesheet href="resources/css/normalize.css">
+  <link rel=stylesheet href="resources/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+
+  <title>Flexbox App Layout</title>
+</head>
+<body>
+
+  <main>
+    <aside class="mq-hide"> <!-- sidebar -->
+      <i class="fa fa-bars"></i>
+      <i class="fa fa-home"></i>
+      <i class="fa fa-search"></i>
+      <i class="fa fa-volume-up"></i>
+      <i class="fa fa-user"></i>
+      <i class="fa fa-spotify"></i>
+      <i class="fa fa-cog"></i>
+      <i class="fa fa-soundcloud"></i>
+    </aside>
+
+    <section class="content">  <!-- the main player view -->
+      <div class="player-head"> <!-- player header -->
+        <img src="resources/img/albumart.jpg" alt="album art">
+        
+        <section class="album-details"> <!-- album details and album controls -->
+          <div>
+            <p class="mq-center">Castle of Glass</p>
+            <p class="mq-hide">Linkin Park</p>
+            <p class="mq-hide">2017, 10 Songs</p>
+          </div>
+
+          <div class="mq-center"> <!-- music controls -->
+            <i class="fa fa-play">&nbsp;&nbsp;Play</i>
+            <i class="fa fa-plus">&nbsp;&nbsp;Add to</i>
+            <i class="fa fa-ellipsis-h">&nbsp;&nbsp;More</i>
+          </div>
+        </section>
+      </div>
+
+      <ul class="music-list"> <!-- songlist view -->
+        <li>
+          <p>1. Lost in the echo</p>
+          <p class="mq-hide">Linkin Park</p>
+          <p class="mq-right">3.36</p>
+          <p><span class="sync mq-hide">Cloud sync</span></p>
+        </li>
+        <li>
+          <p>2. In my remains</p>
+          <p class="mq-hide">Linkin Park</p>
+          <p class="mq-right">3.21</p>
+          <p><span class="sync mq-hide">Cloud sync</span></p>
+        </li>
+        <li>
+          <p>3. Burn it down</p>
+          <p class="mq-hide">Linkin Park</p>
+          <p class="mq-right">3.51</p>
+          <p><span class="sync mq-hide">Cloud sync</span></p>
+        </li>
+        <li>
+          <p>4. Castle of glass</p>
+          <p class="mq-hide">Linkin Park</p>
+          <p class="mq-right">3.20</p>
+          <p><span class="sync mq-hide">Cloud sync</span></p>
+        </li>
+        <li>
+          <p>5. Lies Greed Misery</p>
+          <p class="mq-hide">Linkin Park</p>
+          <p class="mq-right">2.27</p>
+          <p><span class="sync mq-hide">Cloud sync</span></p>
+        </li>
+      </ul>
+    </section>
+  </main>
+    
+  <footer>
+      <img src="resources/img/albumart.jpg" alt="" class="mq-hide">
+      <div class="footer-details">
+        <p>Castle of Glass</p>
+        <p>Linkin Park</p>
+      </div>
+
+      <div class="footer-controls">
+        <i class="fa fa-step-backward"></i>
+        <i class="fa fa-pause"></i>
+        <i class="fa fa-step-forward mq-hide "></i>
+        <i class="fa fa-random mq-hide"></i>
+        <i class="fa fa-refresh mq-hide"></i>
+      </div>
+  </footer>
+</body>
+</html>
